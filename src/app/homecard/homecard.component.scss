@@ -1,0 +1,19 @@
+
+.card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+.card_animi{
+    transition: 0.3s;
+    
+
+    
+
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+}
+
