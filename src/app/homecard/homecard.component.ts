@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import topfood from '../../assets/topfooditems.json'
 
 @Component({
   selector: 'app-homecard',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homecard.component.scss']
 })
 export class HomecardComponent implements OnInit {
+  topfoodcards : any;
+  constructor() {
 
-  constructor() { }
+    this.topfoodcards = topfood.topfooditems
+   }
 
   ngOnInit(): void {
   }
