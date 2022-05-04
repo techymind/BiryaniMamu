@@ -11,7 +11,7 @@
     </div>
    
   </div>
-  <div class = "col-md-6 text-center bannerimages">
+  <div class = "col-md-6 text-center bannerimages" >
     <img src="../../assets/b1.png" width="30%">
     <img src="../../assets/b2.png" width="30%">
     <img src="../../assets/b3.jpg" width="30%">
@@ -24,34 +24,51 @@
 <div class="nameTitle">
 
   <p>
-     <q> There are people in the world so hungry, 
+     <q>There are people in the world so hungry, 
       that God cannot appear to them except in the form of Biryani</q>
    </p>
 
 </div>
 
-<div class="container">
-  <div class="row">
-      
-          <div class="card_wrapper col-lg-4 ">
-              
-              <div class="card_animi">
-                  <div >
-                   <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" style="height: 200px; width: 300px;">
-                   <h3> KBkjsdiaudgvabjk</h3>
-                   <p>
-                       lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                       Ad eum dolorum architecto obcaecati enim dicta praesentium, 
-                       quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.
-                   </p>
-                  </div>
-               
-               
+<div class="resc">
+  <div class="rescinner">
+    
+    <div>
+      <h5 style="margin-left: 20px;color: grey;"> 20+ Biryani specials </h5>
+
+      <hr>
+
+      <div class="flexcontainer">
+
+        <div class="card customfoodcard" *ngFor="let fooditem of topfooditems">
+          <img src="../../assets/b3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Chicken Dum Biryani</h5>
+            <p class="cardtextcustom"> Serves 2 , 3 Pc | | A delightfully hearty crispy chicken curry usually served in the form of semi gravy | | Served With Curry , Gravy And Raita</p>
           </div>
-      
+          <hr class="htag">
+          <div class="flexcontainerprice">
+            <p><i class="fa fa-inr"></i>200 </p>
+            <p class="ml-auto"> 30mins </p>
+          </div>
+          
+         
+            <button class="btn btn-dark"> Add to Cart</button>
+         
+        </div>
+        
+
+      </div>
+
+    </div>
   </div>
 </div>
 
+<div class="explorediv">
+ 
+  <button type="button" class="btn btn-dark"> Explore All Biryanis</button>
+
+</div>
 
 <section id="sec-testimonials" class="sec-testimonials">
   <div class="container">
@@ -113,79 +130,5 @@
   </div>
 </section>
 
-<!-- Subscribe me on Youtube
-https://bit.ly/3m9avif
--->
-<footer id="footer" class="footer-1">
-  <div class="main-footer widgets-dark typo-light">
-  <div class="container">
-  <div class="row">
-    
-  <div class="col-xs-12 col-sm-6 col-md-3">
-  <div class="widget subscribe no-box">
-  <h5 class="widget-title">COMPANY NAME<span></span></h5>
-  <p>About the company, little discription will goes here.. </p>
-  </div>
-  </div>
-  
-  <div class="col-xs-12 col-sm-6 col-md-3">
-  <div class="widget no-box">
-  <h5 class="widget-title">Quick Links<span></span></h5>
-  <ul class="thumbnail-widget">
-  <li>
-  <div class="thumb-content"><a href="#.">Get Started</a></div>	
-  </li>
-  <li>
-  <div class="thumb-content"><a href="#.">Top Leaders</a></div>	
-  </li>
-  <li>
-  <div class="thumb-content"><a href="#.">Success Stories</a></div>	
-  </li>
-  <li>
-  <div class="thumb-content"><a href="#.">Event/Tickets</a></div>	
-  </li>
-  <li>
-  <div class="thumb-content"><a href="#.">News</a></div>	
-  </li>
-  <li>
-  <div class="thumb-content"><a href="#.">Lifestyle</a></div>	
-  </li>
-  <li>
-  <div class="thumb-content"><a href="#.">About</a></div>	
-  </li>
-  </ul>
-  </div>
-  </div>
-  
-  <div class="col-xs-12 col-sm-6 col-md-3">
-  <div class="widget no-box">
-  <h5 class="widget-title">Get Started<span></span></h5>
-  <p>Get access to your full Training and Marketing Suite.</p>
-  <a class="btn" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
-  </div>
-  </div>
-  
-  <div class="col-xs-12 col-sm-6 col-md-3">
-  
-  <div class="widget no-box">
-  <h5 class="widget-title">Contact Us<span></span></h5>
-  
-  <p><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
-  
-  </div>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-    
-  <div class="footer-copyright">
-  <div class="container">
-  <div class="row">
-  <div class="col-md-12 text-center">
-  <p>Copyright Company Name © 2021. All rights reserved.</p>
-  </div>
-  </div>
-  </div>
-  </div>
-  </footer>
+
+<app-footer></app-footer>
