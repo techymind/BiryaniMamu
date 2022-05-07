@@ -1,1 +1,76 @@
-<p>explore works!</p>
+<div>
+    <div style="background-color: black; " class="d-flex flex-row">
+        <div>
+            <img src="../../assets/b1.png" class="image">
+        </div>
+        <div class="banner_details">
+            <h1>
+                Royal Hotel 
+            </h1>
+            <p class="pt-5 " >
+                Biryani is a mixed rice dish originating among the Muslims of the
+                 Indian subcontinent. It is made with Indian spices, rice, 
+                 and some type of meat, and sometimes, in addition, eggs and potatoes. 
+                 Biryani is one of the most popular dishes in South Asia, as well as among
+                  the diaspora from the region
+            </p>
+            <div class="d-flex flex-row justify-content-between p-5">
+                <p>
+                    rating <br> 4.5
+                </p>
+                
+                <p>
+                    time<br>30mins
+                </p>
+                
+                <p>
+                    cost <br><i class="fa fa-inr"></i>200
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <div style="padding: 30px 0 0 50px">
+        <h4 >
+            Recommended
+        </h4>
+        <p style="font-size: 14px;">
+            84 ITEMS
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                   
+            </div>
+            <div class="d-flex flex-column justify-content-center col-lg-8">
+                <div  *ngFor="let fooditem of explorefooditems" class="d-flex flex-row  p-3 ">
+                    <div class = "p-3">
+                        <h3 style="color:rgb(27, 26, 26);font-size:17px">
+                            Double Cheese Margherita
+                        </h3>
+                        <p style="color:rgb(27, 26, 26);font-size:14px">
+                            <i class="fa fa-inr"></i>459
+                        </p>
+                        <p style="color:rgb(168, 168, 168);font-size:12px">
+                            A classic delight loaded with extra 100% real mozzarella cheese(details)
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../../assets/b3.jpg" style="height:100px;width:115px;border-radius: 5px;padding-bottom: 5px; " class="ml-5">
+                        <br>
+                        <button class="btn btn-primary ml-5 " style="position:center">
+                            Add to cart 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+    </div>
+</div>

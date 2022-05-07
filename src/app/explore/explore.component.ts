@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import exploreitems from "../../assets/explorefooditems.json"
 @Component({
   selector: 'app-explore',
   templateUrl: './explore.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExploreComponent implements OnInit {
 
-  constructor() { }
+  explorefooditems;
+  constructor() { 
+    
+    this.explorefooditems = exploreitems.explorefooditems;  
 
+  }
   ngOnInit(): void {
   }
+
 
 }
