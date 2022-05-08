@@ -1,0 +1,86 @@
+.banner{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    background-image: url("https://preview.redd.it/b2n7fy6h94i71.jpg?width=960&crop=smart&auto=webp&s=79d395293e2feba74b454fe15b2b435a7b66ed32");
+    color: whitesmoke;
+}
+
+.headingdiv{
+    padding: 5rem;
+}
+
+.offersdiv{
+   
+    max-width: 1250px;
+    margin: auto;
+    padding: 2rem;
+}
+.headingoffer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.flexoffersdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.validity{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+.customcardstyle{
+    width: 20rem;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+    border-radius: 8px;
+}
+
+.appofferdiv{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    background-color: beige;
+
+}
+.appofferinternaldiv{
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    padding: 30px;
+}
+
+.right{
+    position: relative;
+    width: 50%;
+}
+.appquote{
+    font-size: 24px;
+    padding: 50px;
+}
+.subtext{
+    padding-top: 50px;
+}
+
+.images{
+    display: flex;
+    margin-top: 50px;
+    img{
+        padding: 2px;
+        
+    }
+}
+
+.imagediv{
+    display: flex;
+    width: 232px;
+    height: auto;
+    justify-content: center;
+    img{
+        border-radius: 25px;
+    }
+}
