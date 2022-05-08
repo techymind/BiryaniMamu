@@ -1,35 +1,29 @@
-<div class="frontcontainer">
-<div class="internalfrontcontainer">
-
-  <div class = "col-md-6 text-center">
-    <div class="bannertext">
-      <h1>
-        All we need is Love ,Peace <br>
-          & <br>
-          Biryani
-      </h1>
-    </div>
-   
-  </div>
-  <div class = "col-md-6 text-center bannerimages col-sm-none " >
-    <img src="../../assets/b1.png" width="30%">
-    <img src="../../assets/b2.png" width="30%">
-    <img src="../../assets/b3.jpg" width="30%">
-    
+<!----------banner----------->
+<div class="banner d-flex flex-row">
+  <div class="banner_container">
+      <div class="banner_text">
+          <h1 >
+              All we need is 
+              <br>Love ,Peace <br>
+                & <br>
+                Biryani
+            </h1>
+      </div>
+      <div class = "text-right banner_images d-none d-md-block">
+          <img src="../../assets/b1.png" width="27%">
+          <img src="../../assets/b2.png" width="27%">
+          <img src="../../assets/b3.jpg" width="27%">
+      </div>
   </div>
 </div>
-
-</div>
-
-<div class="nameTitle">
-
+<!--------------quote---------------->
+<div class="quote">
   <p>
      <q>There are people in the world so hungry, 
       that God cannot appear to them except in the form of Biryani</q>
    </p>
-
 </div>
-
+<!--------------cards------------>
 <div class="resc">
   <div class="rescinner">
     
@@ -38,13 +32,15 @@
 
       <hr>
 
-      <div class="flexcontainer">
+      <div class="flexcontainer ">
 
         <div class="card customfoodcard" *ngFor="let fooditem of topfooditems">
           <img src="../../assets/b3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"> Chicken Dum Biryani</h5>
-            <p class="cardtextcustom"> Serves 2 , 3 Pc | | A delightfully hearty crispy chicken curry usually served in the form of semi gravy | | Served With Curry , Gravy And Raita</p>
+            <p class="cardtextcustom"> Serves 2 , 3 Pc | | A delightfully hearty crispy chicken 
+              curry usually served in the form of semi gravy | | Served With Curry ,
+               Gravy And Raita</p>
           </div>
           <hr class="htag">
           <div class="flexcontainerprice">
@@ -63,13 +59,27 @@
     </div>
   </div>
 </div>
+<!-----------explore button-->
+<div class="btn-contain">
+  <div class="btn-gradient-contain">
+  <a href="" class="btn-gradient">
+    <svg width="277" height="62">
+      <defs>
+          <linearGradient id="grad1">
+              <stop offset="0%" stop-color="#40e0d0"/>
+              <stop offset="100%" stop-color="#ffa500" />
+          </linearGradient>
+      </defs>
+       <rect x="5" y="5" rx="0" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+    </svg>
+      <span>Explore More</span>
+  </a>
+  </div>
+  </div>
 
-<div class="explorediv">
- 
-  <button type="button" class="btn btn-dark"> Explore All Biryanis</button>
 
-</div>
 
+<!-------------testimonials------------------------->
 <section id="sec-testimonials" class="sec-testimonials">
   <div class="container">
     <h1 class="h4 mb-5 text-center">Words from our members</h1>
@@ -129,6 +139,5 @@
     </div>
   </div>
 </section>
-
-
+<!-------------footer------------------------->
 <app-footer></app-footer>

@@ -1,44 +1,48 @@
+/* Banner */
 .banner{
-    width:100%;
+    background-color: black;
+    padding-top: 40px;
+    .banner_container{
+        display: flex;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .banner_text{
+        width:100%;
+        text-align: center;
+        padding:30px;
+        h1{
+            color: gold;
+            font-family: Impact, fantasy;
+        }
+    }
+    .banner_images {
+        img{
+            margin: 13px;
+            border-radius: 5px;
+        }
+        :hover {
+            -ms-transform: scale(1.2); 
+            -webkit-transform: scale(1.0); 
+            transform: scale(1.1); 
+            transition: 1s;
+          }
+    }
 }
-
-.navelecustomcss > a{
-    margin-right: 2em;
-}
-.loginbtn{
-    width: 8em;
-}
-
-.flexcontainer{
-    display: flex;
-    width: 100%;
-}
-
-.frontcontainer{
-    display: flex;
-    width: 100%;
-    background-color: #343a40;
-    height: 40vh;
-    color: whitesmoke;
-}
-
-.internalfrontcontainer{
-    display: flex;
-    width: 100%;
-    margin-top: 25px;
-}
-
-.bannerimages > img{
-    margin: 10px;
-}
-.bannertext > h1{
-    
-    width: 40%;
-    margin: 30px;
+/* Quote */
+.quote{
+    padding: 30px;
     text-align: center;
-    font-size: 50px;
-    margin-left: 100px;
+    p{
+        padding-top: 30px;
+        font-size:35px;
+        color:gray;
+        q{
+            font-family: Brush Script MT, Brush Script Std, cursive;
+        }  
+    }
 }
+
 
 .rescinner{
 width:70%;
@@ -48,6 +52,7 @@ margin: auto;
 .flexcontainer{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .flexcontainerprice{
@@ -57,20 +62,13 @@ margin: auto;
     margin-right: 5px;
 }
 
-.nameTitle{
-    padding: 30px;
-    text-align: center;
-    p{
-        padding-top: 30px;
-        font-size:25px;
-        color:gray
-    }
-}
+
 
 .customfoodcard{
 
     width: 18em;
     margin: 20px;
+    
 }
 
 .cardtextcustom{
@@ -86,25 +84,84 @@ margin: auto;
   align-items: center;
   margin: 5rem;
 }
+/*explore button*/
+   
+    
+    
+.btn-contain {
+    margin: 5% auto;
+    min-height: 100px;
+  }
+  .btn-gradient-contain {
+    
+    width: 99%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .btn-gradient {
+    font-family:sans-serif;
+    font-weight:bold;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    line-height: 60px;
+    background-color: transparent;
+  }
+  .btn-gradient svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .btn-gradient svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 386;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+  }
+  .btn-gradient span{
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(left,  rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left,  rgb(0, 0, 0) 0%, rgb(3, 3, 3) 100%);
+    background: linear-gradient(to right,  rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='gold',GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .btn-gradient:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+  }
+  
 
 /* Testimonials */
 .sec-testimonials {
     padding-top: 128px;
     padding-bottom: 128px;
-    background-color: #e2f5f5;
-  }
-  
- 
-  
+    background-color: #000000;
+    color: #efc746;
+  } 
+ footer{
+     color: #efc746;
+ }  
   .carousel-control-next,
   .carousel-control-prev {
     & {
-      color: rgba(101, 100, 100, 0.9);
+      color:transparent;
     }
   
     &:focus,
     &:hover {
-      color: rgb(92, 92, 92);
+      color: transparent;
     }
   }
   
